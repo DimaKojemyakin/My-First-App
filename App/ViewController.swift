@@ -8,12 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var str = "Нет"
 
+    @IBOutlet weak var lableNo: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
+    @IBAction func showResultButton() {
+        textWrite()
+    }
+    func textWrite(){
+        for i in str {
+            lableNo.text! += "\(i)"
+            RunLoop.current.run(until: Date() + 0.20 )
+        }
+    }
 }
 
