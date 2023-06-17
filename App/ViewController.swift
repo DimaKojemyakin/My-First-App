@@ -9,13 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var str = "Нет"
-
     @IBOutlet weak var lableNo: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-
     @IBAction func showResultButton() {
         textWrite()
     }
